@@ -11,7 +11,7 @@ $(document).ready(function () {
             players.push(newPlayer);
             $('#playerList').append(`<li>${newPlayer}</li>`);
             $('#playerInput').val('');
-        } else if$('#playerInput').val() != ''){
+        } else if ($('#playerInput').val() != ''){
             alert('enter someone u buht')
         } else {
             alert('too many u buht');
