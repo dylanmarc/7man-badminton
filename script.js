@@ -6,11 +6,13 @@ $(document).ready(function () {
     //adds players
     $('#add').click(function () {
         console.log(players.length)
-        if (players.length < 7) {
+        if (players.length < 7 && $('#playerInput').val() != '') {
             var newPlayer = $('#playerInput').val();
             players.push(newPlayer);
             $('#playerList').append(`<li>${newPlayer}</li>`);
             $('#playerInput').val('');
+        } else if$('#playerInput').val() != ''){
+            alert('enter someone u buht')
         } else {
             alert('too many u buht');
         }
