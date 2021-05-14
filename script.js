@@ -10,6 +10,7 @@ $(document).ready(function () {
             var newPlayer = $('#playerInput').val();
             players.push(newPlayer);
             $('#playerList').append(`<li>${newPlayer}</li>`);
+            $('#playerInput').val('');
         } else {
             alert('too many u buht');
         }
