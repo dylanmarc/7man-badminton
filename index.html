@@ -5,24 +5,26 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="lead text-center">Badminton 7-Man Matchmaker</div>
-    <div class="card w-25" style="margin:auto">
+<body class="bg-dark">
+    <div class="lead text-light text-center pb-3 pt-3">Badminton 7-Man Matchmaker</div>
+    <div class="card w-25 bg-dark border-secondary p-3" style="margin:auto">
         <div class="row">
-            <div class="col">
-                <ul id="playerList">
+            <div class="col pr-0 pb-2">
+                <ul class="list-group text-center pb-2" id="playerList">
                 </ul>
             </div>
-            <div class="col">
-                <div id="match">
-                    <label>
+            <div class="col pl-0 pb-2">
+                <div class="text-center" id="match">
+
                 </div>
             </div>
         </div>
-        <input type="text" class="form-control mb-4" id="playerInput" placeholder="Name"></input>
+        <div id="divider" class="d-none divider border-top border-secondary pt-2 pb-2"></div>
+        <input type="text" class="form-control bg-dark text-white border-secondary mb-4" id="playerInput" placeholder="Enter name..."></input>
         <button id="add" class="btn btn-sm btn-success mb-2">Add</button>
         <button id="matchmake" class="btn btn-sm btn-success mb-2">Match Make</button>
-        <br></br><br></br>
+        <br />
+        <div class="divider border-top border-secondary pb-2"></div>
         <button id="clear" class="btn btn-sm btn-danger mt-4 mb-4">Clear</button>
     </div>
 
